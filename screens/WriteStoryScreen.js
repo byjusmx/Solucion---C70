@@ -2,8 +2,8 @@ import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
 import {Header} from 'react-native-elements';
-//import db from '../config'
-//import firebase from 'firebase'
+//importa db de '../config'
+//importa firebase de 'firebase'
  
 export default class WriteStoryScreen extends React.Component {
     constructor(props){
@@ -40,7 +40,7 @@ export default class WriteStoryScreen extends React.Component {
                     }}
                 />
                 <TextInput 
-                    placeholder="Story Title"
+                    placeholder="Título de la Historia"
                     onChangeText= {(text)=>{
                         this.setState({
                             title: text
@@ -50,7 +50,7 @@ export default class WriteStoryScreen extends React.Component {
                     style={styles.title}
                     placeholderTextColor='black'/>
                 <TextInput
-                    placeholder="Author"
+                    placeholder="Autor"
                     onChangeText= {(text)=>{
                         this.setState({
                             author: text
@@ -60,7 +60,7 @@ export default class WriteStoryScreen extends React.Component {
                     value={this.state.author}
                     style={styles.author} />
                 <TextInput 
-                    placeholder="Write your story"
+                    placeholder="Escribe tu historia"
                     onChangeText= {(text)=>{
                         this.setState({
                             storyText: text
@@ -75,7 +75,7 @@ export default class WriteStoryScreen extends React.Component {
                     style={styles.submitButton}
                    // onPress={this.submitStory}
                    >
-                    <Text style={styles.buttonText}>Submit</Text>
+                    <Text style={styles.buttonText}>Enviar</Text>
                 </TouchableOpacity>
             </View>
         );
