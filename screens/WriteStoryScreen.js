@@ -35,7 +35,7 @@ export default class WriteStoryScreen extends React.Component {
                 <Header 
                     backgroundColor = {'pink'}
                     centerComponent = {{
-                        text : 'Story Hub',
+                        text : 'Centro de historias',
                         style : { color: 'black', fontSize: 30}
                     }}
                 />
